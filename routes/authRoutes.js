@@ -171,9 +171,8 @@ module.exports = (app) => {
                     
                 }
 
-                if (username != Users[0] || username != Users[1] || username != Users[2] || username != Users[3]) {
-                    res.json(error4);
-                }
+                
+                res.json(error4);
 
             }
     
