@@ -147,8 +147,8 @@ module.exports = (app) => {
                     var eachUser = Users[i];
     
                     // Checks username against database
-                    if (eachUser.username == username) {
-                        if (eachUser.password == password) {
+                    if (eachUser.username === username) {
+                        if (eachUser.password === password) {
 
                             // Send back name and user id
                             let name = eachUser.name;
@@ -167,9 +167,12 @@ module.exports = (app) => {
                         } else {
                             res.json(error5);
                         }
-                    } else {
-                        res.json(error4);
-                    }
+                    } 
+                    
+                }
+
+                if (username != Users[0] || username != Users[1] || username != Users[2] || username != Users[3]) {
+                    res.json(error4);
                 }
 
             }
