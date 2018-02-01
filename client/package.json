@@ -2,7 +2,6 @@
   "name": "test",
   "version": "0.1.0",
   "private": true,
-  // Acts as proxy between localhost:5000 and localhost:3000
   "proxy": {
     "/api/*": {
       "target": "http://localhost:5000"
