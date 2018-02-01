@@ -1,0 +1,99 @@
+$font: 'Roboto', sans-serif;;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.signup, .signin, .welcome {
+    padding: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: $font;
+    height: 100vh;
+    h2 {
+        text-transform: uppercase;
+        font-size: 2.3rem;
+        padding: 30px;
+        letter-spacing: 5px;
+    }
+    &__form {
+        text-align: center;
+        border: white solid 3px;
+        padding: 30px;
+        width: 500px;
+        margin: auto auto;
+        label {
+            display: block;
+            text-transform: uppercase;
+            font-size: 1rem;
+            letter-spacing: 2px;
+        }
+        input {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            height: 30px;
+            width: 200px;
+            text-align: center;
+        }
+        &--submit {
+            background-color: #00B5D1;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            width: 100px;
+            height: 30px;
+            letter-spacing: 2px;
+        }
+        &--submit:hover {
+            background-color: #F39C12;
+        }
+        &--req {
+            margin-top: -8px;
+            margin-bottom: 16px;
+            font-size: 0.6rem;
+            display: block;
+            color: #F39C12;
+        }
+    }
+    a:link, a:visited {
+        color: #00B5D1;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    a:hover {
+        color: #F39C12;
+    }
+}
+
+.welcome {
+    text-align: center;
+    font-size: 1.7rem;
+    letter-spacing: 3px;
+    hr {
+        height: 10px;
+        margin: 40px;
+        background-color: #00B5D1;
+    }
+}
+
+.error-message {
+    background-color: #F39C12;
+    height: 50px;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 15px;
+    font-family: $font;
+}
+
+.signin-link {
+    display: block;
+    img {
+        margin-top: -40px;
+        width: 80px;
+    }
+}
+

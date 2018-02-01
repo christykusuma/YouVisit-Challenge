@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.signup, .signin, .welcome {
+  padding: 100px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  height: 100vh; }
+  .signup h2, .signin h2, .welcome h2 {
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    padding: 30px;
+    letter-spacing: 5px; }
+  .signup__form, .signin__form, .welcome__form {
+    text-align: center;
+    border: white solid 3px;
+    padding: 30px;
+    width: 500px;
+    margin: auto auto; }
+    .signup__form label, .signin__form label, .welcome__form label {
+      display: block;
+      text-transform: uppercase;
+      font-size: 1rem;
+      letter-spacing: 2px; }
+    .signup__form input, .signin__form input, .welcome__form input {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      height: 30px;
+      width: 200px;
+      text-align: center; }
+    .signup__form--submit, .signin__form--submit, .welcome__form--submit {
+      background-color: #00B5D1;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      width: 100px;
+      height: 30px;
+      letter-spacing: 2px; }
+    .signup__form--submit:hover, .signin__form--submit:hover, .welcome__form--submit:hover {
+      background-color: #F39C12; }
+    .signup__form--req, .signin__form--req, .welcome__form--req {
+      margin-top: -8px;
+      margin-bottom: 16px;
+      font-size: 0.6rem;
+      display: block;
+      color: #F39C12; }
+  .signup a:link, .signup a:visited, .signin a:link, .signin a:visited, .welcome a:link, .welcome a:visited {
+    color: #00B5D1;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+  .signup a:hover, .signin a:hover, .welcome a:hover {
+    color: #F39C12; }
+
+.welcome {
+  text-align: center;
+  font-size: 1.7rem;
+  letter-spacing: 3px; }
+  .welcome hr {
+    height: 10px;
+    margin: 40px;
+    background-color: #00B5D1; }
+
+.error-message {
+  background-color: #F39C12;
+  height: 50px;
+  text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 15px;
+  font-family: "Roboto", sans-serif; }
+
+.signin-link {
+  display: block; }
+  .signin-link img {
+    margin-top: -40px;
+    width: 80px; }
